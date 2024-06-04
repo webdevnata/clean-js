@@ -5,6 +5,10 @@
 }
 
 body {
+    height: 200vh;
+}
+
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +17,13 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
-.wrapper {
+.search__wrapper {
     width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px #000;
 }
 
-.header {
+.search__header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -34,7 +38,7 @@ body {
     z-index: 0;
 }
 
-.shadow {
+.search__shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,13 +48,13 @@ body {
     z-index: -1;
 }
 
-h1 {
+.search__h1 {
     margin-bottom: 30px;
     color: #fff;
     font-size: 80px;
 }
 
-input {
+.search__input {
     padding: 10px 20px;
     margin-bottom: 40px;
     width: 100%;
@@ -59,27 +63,26 @@ input {
     background-color: rgba(255, 255, 255, .85);
 }
 
-.drink-list {
+.search__drink-list {
     padding: 20px 40px;
-
 }
 
-h2 {
+.search__h2 {
     padding: 30px 0;
 }
 
-ul {
+.search__drink-list__ulList {
     padding-bottom: 30px;
     font-size: 16px;
     list-style: none;
 }
 
-li {
+.search__drink-list__el {
     padding: 8px 30px;
     border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-li:last-child {
+.search__drink-list__el:last-child {
     padding: 8px 30px;
     border-bottom: 0;
 }
