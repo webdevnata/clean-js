@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beverages - Search engine for beverages</title>
+    <title>Project in JavaScript</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <section class="search">
         <div class="search__wrapper">
             <div class="search__header">
@@ -40,8 +39,38 @@
             </div>
         </div>
     </section>
+    <section class="bill-splitter">
+        <div class="bill-splitter__wrapper">
+            <div class="bill-splitter__top">
+                <h1 class="bill-splitter__top__h1">BillSplitter</h1>
+                <p class="bill-splitter__top__description">Share the bill with your friends!</p>
+            </div>
+            <div class="bill-splitter__bottom">
+                <label class="bill-splitter__bottom__label" for="price">Amount to be paid:</label>
+                <input class="bill-splitter__bottom__box" type="number" id="price">
 
+                <label class="bill-splitter__bottom__label" for="people">Number of people</label>
+                <input class="bill-splitter__bottom__box" type="number" id="people">
+
+                <label class="bill-splitter__bottom__label" for="tip">Tip:</label>
+                <select class="bill-splitter__bottom__box" id="tip">
+                    <option value="0" disabled selected>-select a tip-</option>
+                    <option value="0.05">5%</option>
+                    <option value="0.1">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.2">20%</option>
+                </select>
+
+                <button class="bill-splitter__bottom__button-count">Count</button>
+                <p class="bill-splitter__bottom__error"></p>
+                <p class="bill-splitter__bottom__cost-info">You should contribute <span
+                        class="bill-splitter__bottom__cost-info__amount"></span>
+                    euros each</p>
+            </div>
+        </div>
+    </section>
     <script src="search/script.js"></script>
+    <script src="bill-splitter/script.js"></script>
 </body>
 
 </html>

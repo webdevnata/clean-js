@@ -5,18 +5,20 @@
 }
 
 body {
-    height: 200vh;
+    // height: 200vh;
+    background-color: rgb(233, 233, 233);
+    font-family: "Montserrat", sans-serif;
 }
 
-.search {
+section {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: "Montserrat", sans-serif;
-    background-color: rgb(233, 233, 233);
 
+}
 
+.search {
     &__wrapper {
         width: 800px;
         background-color: #fff;
@@ -86,4 +88,81 @@ body {
         padding: 8px 30px;
         border-bottom: 0;
     }
+}
+
+.bill-splitter {
+    &__wrapper {
+        width: 600px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #000;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        color: #fff;
+        background-color: #0ba400;
+        text-transform: uppercase;
+
+        &__description {
+            margin-top: 10px;
+        }
+    }
+
+    &__bottom {
+        padding: 40px 20px;
+
+        &__label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        &__box {
+            margin-bottom: 25px;
+            padding: 8px 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgb(185, 185, 185);
+        }
+
+        &__button-count {
+            display: block;
+            margin: 20px auto;
+            padding: 20px 10px;
+            width: 60%;
+            font-size: 24px;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #0ba400;
+            border: none;
+            cursor: pointer;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: rgb(4, 124, 46);
+            }
+        }
+
+        &__cost-info {
+            display: none;
+            margin-top: 30px;
+            font-size: 20px;
+
+            &__amount {
+                font-weight: bold;
+            }
+        }
+
+        &__error {
+            font-size: 18px;
+            color: rgb(199, 63, 29);
+            text-align: center;
+        }
+    }
+
+
 }

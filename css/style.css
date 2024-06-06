@@ -6,10 +6,12 @@
 }
 
 body {
-  height: 200vh;
+  background-color: rgb(233, 233, 233);
+  font-family: "Montserrat", sans-serif;
 }
 
-.search {
+section {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,10 +21,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(233, 233, 233);
 }
+
 .search__wrapper {
   width: 800px;
   background-color: #fff;
@@ -92,4 +92,78 @@ body {
 .search__drink-list__el:last-child {
   padding: 8px 30px;
   border-bottom: 0;
+}
+
+.bill-splitter__wrapper {
+  width: 600px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+.bill-splitter__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  color: #fff;
+  background-color: #0ba400;
+  text-transform: uppercase;
+}
+.bill-splitter__top__description {
+  margin-top: 10px;
+}
+.bill-splitter__bottom {
+  padding: 40px 20px;
+}
+.bill-splitter__bottom__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.bill-splitter__bottom__box {
+  margin-bottom: 25px;
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 185, 185);
+}
+.bill-splitter__bottom__button-count {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 10px;
+  width: 60%;
+  font-size: 24px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #0ba400;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.bill-splitter__bottom__button-count:hover {
+  background-color: rgb(4, 124, 46);
+}
+.bill-splitter__bottom__cost-info {
+  display: none;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.bill-splitter__bottom__cost-info__amount {
+  font-weight: bold;
+}
+.bill-splitter__bottom__error {
+  font-size: 18px;
+  color: rgb(199, 63, 29);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
