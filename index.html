@@ -47,14 +47,14 @@
             </div>
             <div class="bill-splitter__bottom">
                 <label class="bill-splitter__bottom__label" for="price">Amount to be paid:</label>
-                <input class="bill-splitter__bottom__box" type="number" id="price">
+                <input class="bill-splitter__bottom__box" type="number" id="price" min="0">
 
                 <label class="bill-splitter__bottom__label" for="people">Number of people</label>
-                <input class="bill-splitter__bottom__box" type="number" id="people">
+                <input class="bill-splitter__bottom__box" type="number" id="people" min="0">
 
                 <label class="bill-splitter__bottom__label" for="tip">Tip:</label>
                 <select class="bill-splitter__bottom__box" id="tip">
-                    <option value="0" disabled selected>-select a tip-</option>
+                    <option value="0" selected disabled>-select a tip-</option>
                     <option value="0.05">5%</option>
                     <option value="0.1">10%</option>
                     <option value="0.15">15%</option>
