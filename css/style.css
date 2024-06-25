@@ -270,4 +270,123 @@ section {
 }
 .form-validator .show-popup {
   left: 50%;
+}
+
+.magic8ball {
+  background-image: linear-gradient(315deg, #7f5a83 0%, #094d7e 74%);
+}
+.magic8ball__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1000px;
+  height: 600px;
+}
+.magic8ball__wrapper__info {
+  text-align: center;
+  font-size: 30px;
+}
+.magic8ball__wrapper__info__h1 {
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+.magic8ball__wrapper__ball-img {
+  position: relative;
+  height: 250px;
+}
+.magic8ball__wrapper__ball-img__img {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+.magic8ball__wrapper__question-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+}
+.magic8ball__wrapper__question-area__h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.magic8ball__wrapper__question-area__input {
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+.magic8ball__wrapper__question-area__answer {
+  margin-top: 30px;
+}
+.magic8ball__wrapper__question-area__answer span {
+  font-weight: bold;
+}
+.magic8ball__wrapper__question-area__error {
+  font-weight: bold;
+  color: #3add8c;
+}
+
+.shake-animation {
+  -webkit-animation: shake 1s 1;
+          animation: shake 1s 1;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    left: 290px;
+  }
+  20% {
+    left: 340px;
+  }
+  40% {
+    left: 290px;
+  }
+  60% {
+    left: 340px;
+  }
+  80% {
+    left: 290px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: 290px;
+  }
+  20% {
+    left: 340px;
+  }
+  40% {
+    left: 290px;
+  }
+  60% {
+    left: 340px;
+  }
+  80% {
+    left: 290px;
+  }
+  100% {
+    left: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
