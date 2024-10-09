@@ -374,3 +374,17 @@ section {
         left: 300px;
     }
 }
+
+.stoper {
+    background-image: linear-gradient(315deg, #414040 0%, #050708 94%);
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: #333;
+    }
+}

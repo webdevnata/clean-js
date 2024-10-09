@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e5cc4b355.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -131,10 +132,40 @@
             </div>
         </div>
     </section>
+    <section class="stoper">
+        <div class="stoper__wrapper">
+            <div class="stoper__wrapper1">
+                <p class="stoper__wrapper1__info">
+                    <i class="fas fa-question"></i>
+                </p>
+                <h1 class="stoper__wrapper1__h1">Stoper</h1>
+                <p class="stoper__wrapper1__stopwatch">0:00</p>
+                <p class="stoper__wrapper1__time">0:00</p>
+                <div class="stoper__wrapper1__buttons">
+                    <button class="stoper__wrapper1__buttons__start"> <i class="fas fa-play"></i></button>
+                    <button class="stoper__wrapper1__buttons__pause"><i class="fas fa-pause"></i></button>
+                    <button class="stoper__wrapper1__buttons__stop"><i class="fas fa-stop"></i></button>
+                    <button class="stoper__wrapper1__buttons__reset"><i class="fas fa-times"></i></button>
+                    <button class="stoper__wrapper1__buttons__history">records</i></button>
+                </div>
+                <ul class="stoper__wrapper1__time-list"></ul>
+            </div>
+            <div class="stopper__modal">
+                <h3 class="stoper__modal__instruction">Instruction:</h3>
+                <p class="stoper__modal__p"><i class="fas fa-play"></i> - start</p>
+                <p class="stoper__modal__p"><i class="fas fa-pause"></i> - pause</p>
+                <p class="stoper__modal__p"><i class="fas fa-stop"></i> - stop</p>
+                <p class="stoper__modal__p"><i class="fas fa-times"></i> - delete everything (including records)</p>
+                <p class="stoper__modal__p"><strong>Records</strong> - check lasted timed measurements</p>
+                <button class="stoper__modal__btn-close">Close</button>
+            </div>
+        </div>
+    </section>
     <script src="search/script.js"></script>
     <script src="bill-splitter/script.js"></script>
     <script src="form-validator/script.js"></script>
     <script src="magic8ball/script.js"></script>
+    <script src="stoper/script.js"></script>
 </body>
 
 </html>
