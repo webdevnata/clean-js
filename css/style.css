@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+:root {
+  --first-color: #FA1406;
+  --second-color: #D2C7BE;
+}
+
 section {
   min-height: 100vh;
   display: -webkit-box;
@@ -407,7 +412,170 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 500px;
-  height: 500px;
-  background-color: #333;
+}
+.stoper__wrapper1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  width: 800px;
+  background-image: radial-gradient(circle, rgb(43, 44, 46) 0%, rgb(25, 25, 25) 93%);
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  color: #fff;
+}
+.stoper__wrapper1__info {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  padding: 20px;
+  font-size: 24px;
+  color: var(--second-color);
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.stoper__wrapper1__info:hover {
+  color: var(--first-color);
+}
+.stoper__wrapper1__h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.stoper__wrapper1__stopwatch {
+  font-size: 72px;
+  color: var(--first-color);
+}
+.stoper__wrapper1__time {
+  visibility: hidden;
+  color: var(--second-color);
+  font-size: 22px;
+}
+.stoper__wrapper1__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+}
+.stoper__wrapper1__buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  width: 20%;
+  color: #Fff;
+  font-size: 22px;
+  background-color: transparent;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.stoper__wrapper1__buttons button:hover, .stoper__wrapper1__buttons button:focus {
+  background-color: var(--first-color);
+  outline: none;
+}
+.stoper__wrapper1__buttons__records {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-transform: uppercase;
+}
+.stoper__wrapper1__time-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  font-size: 22px;
+  color: var(--second-color);
+}
+.stoper__wrapper1__time-list span {
+  font-weight: bold;
+}
+.stoper__modal-shadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 64, 64, 0.65);
+}
+.stoper__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 360px;
+  padding: 30px 60px;
+  border-radius: 15px;
+  background-color: rgb(245, 245, 245);
+}
+.stoper__modal__instruction {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.stoper__modal__p {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.stoper__modal__p__btn-close {
+  display: block;
+  margin: 40px auto 0;
+  padding: 10px 20px;
+  width: 200px;
+  color: #Fff;
+  font-size: 22px;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--first-color);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.stoper__modal__p__btn-close:hover {
+  background-color: rgb(226, 36, 26);
+}
+
+.modal-animation {
+  -webkit-animation: show-modal 0.5s;
+          animation: show-modal 0.5s;
+}
+
+@-webkit-keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
